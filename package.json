@@ -1,5 +1,5 @@
 {
-  "name": "@b2network/b2-wallet-kit",
+  "name": "wallet-kit",
   "version": "0.2.19",
   "type": "module",
   "files": [
@@ -76,21 +76,12 @@
     "example": "example",
     "lib": "lib"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/b2network/b2-wallet-kit.git"
-  },
   "keywords": [
-    "b2",
     "btc",
     "eth",
     "wallet",
     "kit"
   ],
-  "author": "b2network",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/b2network/b2-wallet-kit/issues"
-  },
-  "homepage": "https://github.com/b2network/b2-wallet-kit#readme"
+  "author": "wallet-kit",
+  "license": "MIT"
 }
