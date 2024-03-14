@@ -1,5 +1,5 @@
 {
-  "name": "ai-divinatin-wallet-kit",
+  "name": "@ai/divinatin-wallet-kit",
   "version": "1.0.0",
   "type": "module",
   "files": [
@@ -8,15 +8,15 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "./lib/ai-divinatin-wallet-kit.umd.cjs",
-  "module": "./lib/ai-divinatin-wallet-kit.js",
+  "main": "./lib/b2-wallet-kit.umd.cjs",
+  "module": "./lib/b2-wallet-kit.js",
   "typings": "./lib/index.d.ts",
   "types": "./lib/index.d.ts",
   "exports": {
     ".": {
-      "import": "./lib/ai-divinatin-wallet-kit.js",
+      "import": "./lib/b2-wallet-kit.js",
       "types": "./lib/index.d.ts",
-      "require": "./lib/ai-divinatin-wallet-kit.umd.cjs"
+      "require": "./lib/b2-wallet-kit.umd.cjs"
     },
     "./lib/style.css": "./lib/style.css"
   },
@@ -76,12 +76,21 @@
     "example": "example",
     "lib": "lib"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b2network/b2-wallet-kit.git"
+  },
   "keywords": [
+    "b2",
     "btc",
     "eth",
     "wallet",
     "kit"
   ],
-  "author": "divinatin-wallet-kit",
-  "license": "MIT"
+  "author": "@ai/divinatin-wallet-kit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/b2network/b2-wallet-kit/issues"
+  },
+  "homepage": "https://github.com/b2network/b2-wallet-kit#readme"
 }
