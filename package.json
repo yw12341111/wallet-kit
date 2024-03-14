@@ -1,5 +1,5 @@
 {
-  "name": "wallet-kit",
+  "name": "divinatin-wallet-kit",
   "version": "1.0.0",
   "type": "module",
   "files": [
@@ -82,6 +82,6 @@
     "wallet",
     "kit"
   ],
-  "author": "wallet-kit",
+  "author": "divinatin-wallet-kit",
   "license": "MIT"
 }
