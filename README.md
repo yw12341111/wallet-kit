@@ -1,14 +1,13 @@
-## B2WalletKit
+## @ai/divinatin-wallet-kit
 
 #### install
 
 ```
-npm i @b2network/b2-wallet-kit
+npm i @ai/divinatin-wallet-kit
 ```
 or
 ```
-yarn add @b2network/b2-wallet-kit
+yarn add @ai/divinatin-wallet-kit
 ```
 
 #### usage
-[View the example folder](https://github.com/b2network/b2-wallet-kit/tree/main/example)
