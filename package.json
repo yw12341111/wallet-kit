@@ -1,6 +1,6 @@
 {
   "name": "wallet-kit",
-  "version": "0.2.19",
+  "version": "1.0.0",
   "type": "module",
   "files": [
     "lib"
