@@ -4,10 +4,11 @@ import Modal from 'react-modal';
 import { useB2Modal } from "./context";
 import { WalletCollection, WalletTypes } from "../types/types";
 import { useCallback, useEffect, useMemo, useState } from "react";
-import iconMetamask from '../imgs/icon_metamask.png'
+import iconMetamask from '../imgs/icon_metamask.svg'
 import iconOkx from '../imgs/icon_okx.svg'
 import iconUnisat from '../imgs/icon_unisat.svg'
 import iconType from '../imgs/icon_type.svg'
+import iconBitcoin from '../imgs/icon_bitcoin.svg'
 import './styles/index.less';
 import { saveWalletToLocal } from "../utils/localstore";
 import WalletItem from "./components/WalletItem";
@@ -36,12 +37,18 @@ const defaultInstalledMap: Record<WalletTypes, boolean> = {
 }
 
 const SubTitle = ({ title }: { title: string }) => {
+  let subIcon=null;
+  if(title==='Etherscan Wallet'){
+    subIcon=iconType
+  }else if(title==='Bitcoin Wallet'){
+    subIcon=iconBitcoin
+  }else{
+    return null
+  }
   return (
     <div className="title">
-      <img src={iconType} alt="icon" />
-      <div>
+      <img src={subIcon} alt="icon" />
         {title}
-      </div>
     </div>
   )
 }
@@ -135,7 +142,7 @@ const WalletModal = ({ collection }: { collection: WalletCollection }) => {
       <div className="content">
         {
           showEth && <div>
-            <SubTitle title="Ethereum Wallet" />
+            <SubTitle title="Etherscan Wallet" />
             {
               showEth && connectors.map(c => {
                 const installed = getInstalled(c.name)
@@ -156,7 +163,7 @@ const WalletModal = ({ collection }: { collection: WalletCollection }) => {
           showBtc && <div>
             <SubTitle title="Bitcoin Wallet" />
             {
-              btcConnectors.map(c => {
+              btcConnectors.sort((a, b) =>(b.name + '').localeCompare(a.name + '')).map(c => {
                 const installed = getInstalled(c.name)
                 return (
                   <div key={c.name}

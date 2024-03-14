@@ -1,4 +1,5 @@
 import iconClose from '../../imgs/icon_close.svg'
+import logo from '../../imgs/logo.svg'
 
 
 const ModalHeader = ({
@@ -6,8 +7,9 @@ const ModalHeader = ({
 }: { hanldeCloseConnectModal:()=>void}) => {
   return (
     <div className="header">
-      <div className="tip">Please connect a wallet</div>
-      <img onClick={hanldeCloseConnectModal} src={iconClose} alt="close" />
+      <img className="close" onClick={hanldeCloseConnectModal} src={iconClose} alt="close" />
+      <img className="logo" src={logo}/>
+      <span>Connect your account now and start exploring</span>
     </div>
   )
 }

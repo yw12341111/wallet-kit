@@ -28,7 +28,7 @@ const WalletItem = ({ walletIcon, walletName, installed }: Iprops) => {
             url && window.open(url)
           }}>Install</div>
         }
-        <img className="arrow" src={iconArrow} alt="icon" />
+        {installed && <div className='install'>Connect</div>}
       </div>
     </div>
   )

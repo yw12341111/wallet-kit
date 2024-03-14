@@ -1,67 +1,102 @@
 
 
+@font-face {
+  font-family: "Barlow";
+  src: url("/fonts/Barlow-Regular.ttf");
+}
 .b2WalletModal {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
-  min-width: 508px;
-  min-height: 200px;
-  border-radius: 10px;
-  color: black;
+  background-color: #1E1C45;
+  width: 416px;
+  height: 608px;
+  border-radius: 24px;
+  border:1px solid #2B2868;
   .header {
+    position: relative;
+    top: 0;
+    left: 0;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 18px 24px;
-    background: #FFF8EE;
-    font-size: 22px;
-    font-weight: 600;
-    color: #000;
     text-transform: capitalize;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    padding: 48px 0 23px;
+    .close{
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      cursor: pointer;
+    }
+    .logo{
+      width: 120px;
+      height: 48px;
+      margin-bottom: 8px;
+    }
+    >span{
+      font-family: 'Barlow';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: #95A5B7;
+    }
   }
   .content {
-    padding: 24px;
+    padding:0 24px;
     .title {
       display: flex;
       align-items: center;
-      gap: 12px;
-      font-weight: 600;
-      font-size: 20px;
-      margin-bottom: 12px;
+      font-family: 'Poppins';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #fff;
+      margin-bottom: 10px;
+      >img{
+        margin-right: 8px;
+      }
     }
     .walletItem {
       display: flex;
       align-items: center;
       justify-content: space-between;
       margin-bottom: 16px;
-      padding: 12px 24px;
+      padding: 20px 20px 24px 20px;
       cursor: pointer;
-      border: 1px solid #000;
-      border-radius: 4px;
+      border-radius: 8px;
+      background: #2C295B;
       .left {
         display: flex;
-        gap: 16px;
         align-items: center;
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        color: #fff;
         .walletLogo {
-          width: 32px;
-          height: 32px;
+          width: 25.95px;
+          height: 24px;
+          margin-right: 8px;
         }
       }
       .right {
         display: flex;
         align-items: center;
-        gap: 16px;
         .install {
-          background: #000;
-          color: white;
-          border-radius: 20px;
           cursor: pointer;
-          padding: 4px 20px;
+          width: 85.78px;
+          height: 26px;
+          line-height: 26px;
+          text-align: center;
           opacity: 1;
+          border-radius: 53px;
+          border: 1px solid #43CEFC;
+          font-family: 'Poppins';
+          font-weight: 600;
+          font-size: 14px;
+          color: #fff;
         }
       }
     }
