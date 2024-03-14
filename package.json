@@ -1,5 +1,5 @@
 {
-  "name": "divinatin-wallet-kit",
+  "name": "ai-divinatin-wallet-kit",
   "version": "1.0.0",
   "type": "module",
   "files": [
@@ -8,15 +8,15 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "./lib/divinatin-wallet-kit.umd.cjs",
-  "module": "./lib/divinatin-wallet-kit.js",
+  "main": "./lib/ai-divinatin-wallet-kit.umd.cjs",
+  "module": "./lib/ai-divinatin-wallet-kit.js",
   "typings": "./lib/index.d.ts",
   "types": "./lib/index.d.ts",
   "exports": {
     ".": {
-      "import": "./lib/divinatin-wallet-kit.js",
+      "import": "./lib/ai-divinatin-wallet-kit.js",
       "types": "./lib/index.d.ts",
-      "require": "./lib/divinatin-wallet-kit.umd.cjs"
+      "require": "./lib/ai-divinatin-wallet-kit.umd.cjs"
     },
     "./lib/style.css": "./lib/style.css"
   },

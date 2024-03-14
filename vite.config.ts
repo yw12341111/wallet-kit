@@ -33,8 +33,8 @@ export default defineConfig({
     cssTarget: 'chrome61',
     lib: {
       entry: resolve('src/index.ts'),
-      name: 'divinatin-wallet-kit',
-      fileName: 'divinatin-wallet-kit',
+      name: 'ai-divinatin-wallet-kit',
+      fileName: 'ai-divinatin-wallet-kit',
     },
     rollupOptions: {
       external: ['react', 'react-dom', 'viem', 'wagmi'],

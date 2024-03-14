@@ -3,9 +3,9 @@
 #### install
 
 ```
-npm i divinatin-wallet-kit
+npm i ai-divinatin-wallet-kit
 ```
 or
 ```
-yarn add divinatin-wallet-kit
+yarn add ai-divinatin-wallet-kit
 ```
