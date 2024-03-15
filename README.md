@@ -1,13 +1,13 @@
-## @ai/divinatin-wallet-kit
+## ai-divinates-wallet-kit
 
 #### install
 
 ```
-npm i @ai/divinatin-wallet-kit
+npm i ai-divinates-wallet-kit
 ```
 or
 ```
-yarn add @ai/divinatin-wallet-kit
+yarn add ai-divinates-wallet-kit
 ```
 
 #### usage

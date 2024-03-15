@@ -38,7 +38,7 @@ const defaultInstalledMap: Record<WalletTypes, boolean> = {
 
 const SubTitle = ({ title }: { title: string }) => {
   let subIcon=null;
-  if(title==='Etherscan Wallet'){
+  if(title==='Ethereum Wallet'){
     subIcon=iconType
   }else if(title==='Bitcoin Wallet'){
     subIcon=iconBitcoin
@@ -142,7 +142,7 @@ const WalletModal = ({ collection }: { collection: WalletCollection }) => {
       <div className="content">
         {
           showEth && <div>
-            <SubTitle title="Etherscan Wallet" />
+            <SubTitle title="Ethereum Wallet" />
             {
               showEth && connectors.map(c => {
                 const installed = getInstalled(c.name)

@@ -1,6 +1,6 @@
 {
-  "name": "@ai/divinatin-wallet-kit",
-  "version": "1.0.0",
+  "name": "ai-divinates-wallet-kit",
+  "version": "1.0.3",
   "type": "module",
   "files": [
     "lib"
@@ -87,7 +87,7 @@
     "wallet",
     "kit"
   ],
-  "author": "@ai/divinatin-wallet-kit",
+  "author": "ai-divinates-wallet-kit",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/b2network/b2-wallet-kit/issues"
